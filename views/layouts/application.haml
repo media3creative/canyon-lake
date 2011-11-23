@@ -1,0 +1,201 @@
+- @sitename
+
+
+!!! 5
+%html{html_attrs}
+  %head
+    %title= @title
+    // Buggy on the iPhone4
+    // %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", :name => "viewport"}
+    %link{:href => "stylesheets/stylesheet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "themes/default/default.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+    %script{:type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.color.js"}
+    %script{:type => "text/javascript", :src => "javascripts/menu-control.js"}
+    %script{:type => "text/javascript", :src => "javascripts/iscroll.js"}
+    %script{:src => "javascripts/prototype.js", :type => "text/javascript"}
+    %script{:src => "javascripts/scriptaculous.js?load=effects,builder", :type => "text/javascript"}
+    %script{:src => "javascripts/lightbox.js", :type => "text/javascript"}
+    %link{:href => "stylesheets/lightbox.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/queryLoader.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "javascripts/queryLoader.js", :type => "text/javascript"}
+    
+    %script{:type => "text/javascript", :src => "javascripts/jquery.nivo.slider.js"}
+    %link{:href => "stylesheets/nivo-slider.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    //%script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js", :type => "text/javascript"}
+    
+
+
+  %body{:onorientationchange =>"ipadFunc();"}
+  //.preloader
+  //  .preloader-box
+  //    %img{:height => "40", :src => "/images/75.gif", :width => "40"}
+  .bg2
+  .bg1
+  .menu-container
+    %ul
+      %li
+        %a{:href => "#", :id => "main-1-link"} HOME
+      %li
+        %a{:href => "#", :id => "main-2-link"} ABOUT
+      %li
+        %a{:href => "#", :id => "main-3-link"} RESORT
+      %li
+        %a{:href => "#", :id => "main-4-link"} GALLERY
+      %li
+        %a{:href => "#", :id => "main-5-link"} CONTACT    
+  .bg-banner
+  #page1
+    .content
+      .slideshow
+        .slider-wrapper.theme-default
+          .ribbon
+          #slider.nivoSlider
+            %img{:alt => "", :src => "images/slideshow/1.jpg"}
+            %img{:alt => "", :src => "images/slideshow/2.jpg"}
+            %img{:alt => "", :src => "images/slideshow/3.jpg"}
+      %h2
+        CANYON LAKE
+        %span{:style => "color:black"} | Our Story
+        %br
+        %br
+      .column
+        %img{:height => "325", :src => "images/photo_1.png", :width => "280", :style =>"margin-left:100px;margin-top: 50px;"}
+      .column
+        %h3 First Header
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae sagittis dolor. Integer in molestie mi. Pellentesque non diam ac arcu dapibus mattis a at nisi. Nam scelerisque malesuada lorem, ac lobortis lectus semper in. Nunc in massa magna. Quisque nec feugiat libero. Integer dui arcu, pellentesque vitae pretium dictum, euismod adipiscing tortor. 
+        %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vel sem ut libero rhoncus interdum quis id elit. 
+        %h3 Second Header
+        %p Curabitur ac massa luctus libero pharetra iaculis ac sed tellus. Quisque id turpis dui, eget porttitor ipsum. Nulla sem diam, tristique quis accumsan id, vestibulum sed mauris. Donec vitae commodo ante. Nam malesuada hendrerit est, sit amet bibendum leo suscipit non.
+        %p Donec mollis, nisi id placerat imperdiet, libero elit ultricies ipsum, vitae dignissim massa urna eu velit. Suspendisse potenti. Praesent at tellus nunc. Cras at erat justo, at pellentesque nisi. 
+        %p Integer dolor nisl, bibendum sagittis imperdiet pulvinar:
+        %ul.normal-list{:style=>"margin-left:50px;"}
+          %li 
+            %span Conferencias
+          %li 
+            %span Seminarios
+          %li 
+            %span Talleres
+          %li 
+            %span Desayunos
+      .footer
+        Copyright &copy Canyon Lake Resort 2011-2012. All Rights Reserved.
+  #page2
+    .content
+      .banner
+        %img{:alt => "", :src => "images/slideshow/1.jpg", :height => "300", :width =>"850"}
+      %h2 About Us
+      .column
+        %h3 Vivamus sed lacus eget
+        %p Ut tincidunt rhoncus risus, et adipiscing dui dignissim eu. Etiam commodo, purus in dapibus pellentesque, neque diam pretium diam, eu ultrices nulla nulla ac nulla. Phasellus porta sem urna. Aliquam placerat venenatis orci, non adipiscing nulla pellentesque sit amet. Proin metus nisl, lobortis at lobortis at, ullamcorper ut nibh. Maecenas nec scelerisque nibh
+        %h3 Suspendisse vel mauris vel nulla
+        %p Nulla pretium suscipit neque at semper. Aliquam blandit sagittis vehicula. Sed lobortis nibh eget arcu ultrices ac porttitor erat laoreet. Mauris eget nunc quis arcu pharetra lacinia. 
+      .column
+        %h3 Cras at erat justo
+        %p Educar, Motivar, Instruir e Impactar corazones, a traves de nuestras actividades, y materiales educativos.
+        %h3 Nam in fringilla libero. 
+        %p "IMPACTAR CORAZONES, ENRIQUECER VIDAS, TRANSFORMAR FAMILIAS."
+        %h3 Phasellus porta 
+        %p Edificar familias felices, que disfruten de la vida plenamente, Haciendo juntos un mundo mejor!
+      .column{:style =>"width: 850px;"}
+        %h3 Header 3
+        %p La Serenidad y seguridad que transmite Sara Reyes, no nos permite imaginar su pasado, ni la trayectoria de su vida. Sus padres, Carlos y Martha Reyes, pastores y misioneros en el Estado de Hidalgo Mexico, por mas de 40 anos, y de quien ella misma menciona: "El ser hija de Pastores, es el mejor regalo y la mejor herencia que me ha dado DIOS.!"
+      .column{:style =>"width: 250px;"}
+        %img{:height => "273", :src => "images/banner/profile_pic.jpg", :width => "175", :style =>"margin-left:50px;"}
+      .column{:style =>"width: 550px;"}
+        %h3 ACTIVITIES
+        %ul.normal-list
+          %li 
+            %span.pink Maestra de ninos. Estado de Hidalgo 
+            | Mexico 1983-1989
+          %li 
+            %span.pink Presidente de la Asociacion de Jovenes Saltillo
+            | Coahuila Mexico. 1989-1991
+          %li 
+            %span.pink Lider de Jovenes y Organizadora de Congresos Juveniles
+            | Mexico 1991-1994
+          %li 
+            %span.pink Co-Conductora del programa radial "Volando con las Aguilas"
+            | Dallas,Tx. 2006
+          %li 
+            %span.pink CO-Conductora del programa radial "Sanando las Naciones"
+            | Houston,Tx.2007
+          %li 
+            %span.pink Conferencista 
+            | Texas, Oklahoma, Louisiana, 2008-al presente.
+          %li 
+            %span.pink Pastora de la Mision "El Refugio" Porter
+            | Tx. 2009-2011
+          %li 
+            %span.pink Etudiante del Seminario Teologico "PENIEL" 
+            | Houston, Tx. 2008-al presente.
+          %li 
+            %span.pink Fundadora del Ministerio de Mujeres y creadora del proyecto televisivo.
+        %p Actualmente, a traves del ministerio "MUJER VIRTUOSA HISPANA" viaja por diferentes ciudades y estados, bendiciendo la vida de cientos de mujeres con sus dinamicas y motivadoras conferencias, cumpliendo asi su mision.
+    .footer
+      Copyright &copy Canyon Lake Resort 2011-2012. All Rights Reserved.
+  #page3
+    .content
+      .banner
+        %img{:alt => "", :src => "images/slideshow/1.jpg", :height => "300", :width =>"850"}
+      %h2 Resort
+      .column
+        %h3 Coming Soon...
+    .footer
+      Copyright &copy Canyon Lake Resort 2011-2012. All Rights Reserved.
+  #page4
+    .content
+      .banner
+        %img{:alt => "", :src => "images/slideshow/2.jpg", :height => "300", :width =>"850"}
+      %h2 GALLERIA
+      .column
+        .gallery-container
+          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
+            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
+          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
+            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
+          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
+            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
+          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
+            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
+          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
+            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
+          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
+            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
+          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
+            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
+          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
+            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
+      .footer
+        Copyright &copy Canyon Lake Resort 2011-2012. All Rights Reserved.
+  #page5
+    .content
+      .banner
+        %img{:alt => "", :src => "images/slideshow/3.jpg", :height => "300", :width =>"850"}
+      %h2 CONTACTO
+      %br
+      %br
+      .column
+        %h3 CANYON LAKE RESORT
+        %p Ut tincidunt rhoncus risus, et adipiscing dui dignissim eu. Etiam commodo, purus in dapibus pellentesque, neque diam pretium diam, eu ultrices nulla nulla ac nulla.
+        %p 
+          %span.pink ADDRESS 
+          | P O. Box. 23227 Houston, Texas 77228
+        %p 
+          %span.pink TEL 
+          | 999-999-9999
+        %p 
+          %span.pink EMAIL
+          | info@canyonlakeresort.com
+        %br
+      .column
+        %h3 CONTACT FORM
+        %br
+        .contact-form
+          %iframe{:allowtransparency => "true", :frameborder => "0", :height => "598", :scrolling => "no", :src => "https://media3creative.wufoo.com/embed/p7w5q1/", :style => "width:370px;border:none;margin-left: 30px;"}
+      .footer
+        Copyright &copy Canyon Lake Resort 2011-2012. All Rights Reserved.
+    
+
+    
+
