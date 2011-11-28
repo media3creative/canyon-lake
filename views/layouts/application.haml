@@ -35,13 +35,13 @@
   .menu-container
     %ul
       %li
-        %a{:href => "#", :id => "main-1-link"} HOME
+        %a{:href => "#", :id => "main-1-link"} ABOUT
       %li
-        %a{:href => "#", :id => "main-2-link"} ABOUT
+        %a{:href => "#", :id => "main-2-link"} HOMES
       %li
-        %a{:href => "#", :id => "main-3-link"} RESORT
+        %a{:href => "#", :id => "main-3-link"} SPECIALS
       %li
-        %a{:href => "#", :id => "main-4-link"} GALLERY
+        %a{:href => "#", :id => "main-4-link"} GUIDE
       %li
         %a{:href => "#", :id => "main-5-link"} CONTACT    
   .bg-banner
@@ -79,95 +79,113 @@
           %li 
             %span Desayunos
       .footer
-        Copyright &copy Canyon Lake Resort 2011-2012. All Rights Reserved.
+        Copyright &copy Canyon Lake Resort 2011-2012. 830-221-6351. All Rights Reserved.
   #page2
     .content
       .banner
         %img{:alt => "", :src => "images/slideshow/1.jpg", :height => "300", :width =>"850"}
-      %h2 About Us
+      %h2 Waterfront Villa
       .column
-        %h3 Vivamus sed lacus eget
-        %p Ut tincidunt rhoncus risus, et adipiscing dui dignissim eu. Etiam commodo, purus in dapibus pellentesque, neque diam pretium diam, eu ultrices nulla nulla ac nulla. Phasellus porta sem urna. Aliquam placerat venenatis orci, non adipiscing nulla pellentesque sit amet. Proin metus nisl, lobortis at lobortis at, ullamcorper ut nibh. Maecenas nec scelerisque nibh
-        %h3 Suspendisse vel mauris vel nulla
-        %p Nulla pretium suscipit neque at semper. Aliquam blandit sagittis vehicula. Sed lobortis nibh eget arcu ultrices ac porttitor erat laoreet. Mauris eget nunc quis arcu pharetra lacinia. 
+        .gallery-container{:style => "width: 425px; margin-left: 5px;"}
+          %img{:height => "300", :src => "/images/gallery/1.jpg", :width => "400"}
+        .gallery-container{:style => "width: 425px;"}
+          %a{:href => "/images/gallery/2.jpg", :rel => "lightbox[home1]"}
+            %img{:height => "80", :src => "/images/gallery/2_small.jpg", :width => "80"}
+          %a{:href => "/images/gallery/3.jpg", :rel => "lightbox[home1]"}
+            %img{:height => "80", :src => "/images/gallery/3_small.jpg", :width => "80"}
+          %a{:href => "/images/gallery/4.jpg", :rel => "lightbox[home1]"}
+            %img{:height => "80", :src => "/images/gallery/4_small.jpg", :width => "80"}
+          %a{:href => "/images/gallery/5.jpg", :rel => "lightbox[home1]"}
+            %img{:height => "80", :src => "/images/gallery/5_small.jpg", :width => "80"}
+        %h3 About Waterfront Villa
+        %p Beautiful remodeled Canyon Lake waterfront home on 1+ acre with spectacular lakeview. 3 bedroom, 2 bath. Master bedroom with queen bed and large bath with dual sinks and tiled shower. 2nd bedroom has a queen bed, 3rd bedroom has 2 bunk beds with ability to sleep 4. Home features stained concrete floors, full remodeled kitchen with stainless appliances, large open living & dining with new furnishings and view of the lake. Back covered patio with gas grill and pleny of seating looking out at the lake. 
+        %p OK to bring your boat up to lakeshore in the cove behind the home. Located just off FM 306 and past the Silverleaf Hill Country Resort. Guests have access to neighborhood swimming pool & tennis court. 
+        %p Nearby Canyon Lake Marina, watefront restaurant and a few miles from River activities on the Guadalupe. Whitewater Amphitheater featuring outdoor concerts just a few miles.   
       .column
-        %h3 Cras at erat justo
-        %p Educar, Motivar, Instruir e Impactar corazones, a traves de nuestras actividades, y materiales educativos.
-        %h3 Nam in fringilla libero. 
-        %p "IMPACTAR CORAZONES, ENRIQUECER VIDAS, TRANSFORMAR FAMILIAS."
-        %h3 Phasellus porta 
-        %p Edificar familias felices, que disfruten de la vida plenamente, Haciendo juntos un mundo mejor!
-      .column{:style =>"width: 850px;"}
-        %h3 Header 3
-        %p La Serenidad y seguridad que transmite Sara Reyes, no nos permite imaginar su pasado, ni la trayectoria de su vida. Sus padres, Carlos y Martha Reyes, pastores y misioneros en el Estado de Hidalgo Mexico, por mas de 40 anos, y de quien ella misma menciona: "El ser hija de Pastores, es el mejor regalo y la mejor herencia que me ha dado DIOS.!"
-      .column{:style =>"width: 250px;"}
-        %img{:height => "273", :src => "images/banner/profile_pic.jpg", :width => "175", :style =>"margin-left:50px;"}
-      .column{:style =>"width: 550px;"}
-        %h3 ACTIVITIES
+        %h3 Location
+        %p Canyon Lake, Hill Country, Texas, USA
+        %h3 Accommodations
+        %p House, 3 Bedrooms + Convertible bed(s), 2 Baths (Sleeps 8-10)
+        %h3 Rate
+        %p 
+          %b May 1 - Sept 30 
+          %br 
+          $250/weekday night  
+          %br 
+          $350/weekend night   
+          %br 
+          $1500/week
+        %p
+          %b Oct 1 - Dec 31
+          %br 
+          $200/weekday night  
+          %br 
+          $300/weekend night  
+          %br 
+          $1200/week
+        %p
+          %b Jan 1 - Apr 30
+          %br 
+          $2000/month
+      .column
+        %h3 Features
         %ul.normal-list
           %li 
-            %span.pink Maestra de ninos. Estado de Hidalgo 
-            | Mexico 1983-1989
+            %span.pink Amenities
+            | Air Conditionning, Wood Fireplace, Garage, Parking for RV/Boat/Trailer
           %li 
-            %span.pink Presidente de la Asociacion de Jovenes Saltillo
-            | Coahuila Mexico. 1989-1991
+            %span.pink Beds
+            | Queen Bed, Bunk Bed
           %li 
-            %span.pink Lider de Jovenes y Organizadora de Congresos Juveniles
-            | Mexico 1991-1994
+            %span.pink Entertainment
+            | Cable/Satellite TV, Shared Pool, DVD, Video Library
           %li 
-            %span.pink Co-Conductora del programa radial "Volando con las Aguilas"
-            | Dallas,Tx. 2006
+            %span.pink Kitchen
+            | Full Kitchen, Cooking Utensils Provided, Refrigerator, Dish Washer, Microwave, Ice Maker
           %li 
-            %span.pink CO-Conductora del programa radial "Sanando las Naciones"
-            | Houston,Tx.2007
+            %span.pink Outdoor Features
+            | Gas/Electric BBQ Grill, Deck/Patio
           %li 
-            %span.pink Conferencista 
-            | Texas, Oklahoma, Louisiana, 2008-al presente.
+            %span.pink View/Location
+            | Lakefront, Lake View
           %li 
-            %span.pink Pastora de la Mision "El Refugio" Porter
-            | Tx. 2009-2011
-          %li 
-            %span.pink Etudiante del Seminario Teologico "PENIEL" 
-            | Houston, Tx. 2008-al presente.
-          %li 
-            %span.pink Fundadora del Ministerio de Mujeres y creadora del proyecto televisivo.
-        %p Actualmente, a traves del ministerio "MUJER VIRTUOSA HISPANA" viaja por diferentes ciudades y estados, bendiciendo la vida de cientos de mujeres con sus dinamicas y motivadoras conferencias, cumpliendo asi su mision.
+            %span.pink Suitability
+            | Kid Friendly, No Pets Allowed, No Smoking Allowed
+        %h3 ACTIVITIES
+        %ul.normal-list
+          %li Tennis
+          %li Boating
+          %li Swimming
+          %li Fishing
+          %li Sledding/Tubbing
+          %li Kayaking
+          %li Water Skiing
+          %li Biking
+          %li Theme Park
+          %li Sailing
+          %li Jet Skiing
+          %li Mountain Biking
+          %li Rafting
     .footer
-      Copyright &copy Canyon Lake Resort 2011-2012. All Rights Reserved.
+      Copyright &copy Canyon Lake Resort 2011-2012. 830-221-6351. All Rights Reserved.
   #page3
     .content
       .banner
         %img{:alt => "", :src => "images/slideshow/1.jpg", :height => "300", :width =>"850"}
-      %h2 Resort
+      %h2 Special Deals
       .column
         %h3 Coming Soon...
     .footer
-      Copyright &copy Canyon Lake Resort 2011-2012. All Rights Reserved.
+      Copyright &copy Canyon Lake Resort 2011-2012. 830-221-6351. All Rights Reserved.
   #page4
     .content
       .banner
         %img{:alt => "", :src => "images/slideshow/2.jpg", :height => "300", :width =>"850"}
-      %h2 GALLERIA
+      %h2 Guides and Attractions
       .column
-        .gallery-container
-          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
-            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
-          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
-            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
-          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
-            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
-          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
-            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
-          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
-            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
-          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
-            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
-          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
-            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
-          %a{:href => "/images/gallery/1.jpg", :rel => "lightbox[sara]"}
-            %img{:height => "80", :src => "/images/gallery/1_small.jpg", :width => "80"}
+        %h3 Coming Soon...
       .footer
-        Copyright &copy Canyon Lake Resort 2011-2012. All Rights Reserved.
+        Copyright &copy Canyon Lake Resort 2011-2012. 830-221-6351. All Rights Reserved.
   #page5
     .content
       .banner
@@ -183,7 +201,7 @@
           | P O. Box. 23227 Houston, Texas 77228
         %p 
           %span.pink TEL 
-          | 999-999-9999
+          | 830-221-6351
         %p 
           %span.pink EMAIL
           | info@canyonlakeresort.com
